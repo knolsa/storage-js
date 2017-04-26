@@ -1,3 +1,3 @@
-# init-ts-module
+# knolsa.storage
 
-Main files of a TypeScript npm module.
+Knolsa storage module

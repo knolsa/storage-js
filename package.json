@@ -1,7 +1,7 @@
 {
-  "name": "init-ts-module",
+  "name": "knolsa.storage",
   "version": "0.0.1",
-  "description": "Init TypeScript npm module",
+  "description": "Knolsa storage npm module",
   "main": "./lib/index.js",
   "types": "./types/index.d.ts",
   "scripts": {
@@ -18,21 +18,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Mitica/init-ts-module.git"
+    "url": "git+https://github.com/knolsa/storage-js.git"
   },
   "keywords": [
-    "ts",
-    "init-module"
+    "knolsa",
+    "storage"
   ],
   "author": "Dumitru Cantea",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Mitica/init-ts-module/issues"
+    "url": "https://github.com/knolsa/storage-js/issues"
   },
-  "homepage": "https://github.com/Mitica/init-ts-module#readme",
+  "homepage": "https://github.com/knolsa/storage-js#readme",
   "devDependencies": {
     "@types/node": "^7.0.5",
     "mocha": "^3.2.0",
-    "typescript": "^2.1.5"
+    "typescript": "^2.2.2"
   }
 }
