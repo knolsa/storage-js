@@ -1,8 +1,7 @@
 
 import { KnolSchema } from './schemas'
-import { Schema, model as createModel, Connection } from 'mongoose'
+import { Schema, Connection } from 'mongoose'
 import { MongoModel } from '../mongo_model'
-import { IPlainObject } from '../utils'
 
 export type KnolSourceInfo = {
     id?: string

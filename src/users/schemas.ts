@@ -17,7 +17,7 @@ export const UserSettingsSchema = new Schema({
         required: true
     }
 }, {
-        collection: [TABLES_PREFIX, 'user_settings'].join('_')
+        collection: [TABLES_PREFIX, 'usersettings'].join('_')
     })
 
 UserSettingsSchema.set('toObject', {

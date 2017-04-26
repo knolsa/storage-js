@@ -50,3 +50,52 @@ export const KnolSchema = new Schema({
 KnolSchema.set('toObject', {
     getters: true
 });
+
+
+/**
+ * LearnedKnolSchema
+ */
+export const LearnedKnolSchema = new Schema({
+    // hash(date, userId, knolId)
+    _id: String,
+    date: {
+        type: Number,
+        min: 20170101,
+        max: 21000101,
+        index: true,
+        required: true
+    },
+    userId: {
+        type: String,
+        trim: true,
+        maxlength: 40,
+        minlength: 1,
+        index: true,
+        required: true
+    },
+    knolId: {
+        type: String,
+        required: true,
+        index: true
+    },
+
+    notes: {
+        type: String,
+        maxlength: 200
+    },
+
+    updatedAt: {
+        type: Date
+    },
+    createdAt: {
+        type: Date,
+        default: Date.now,
+        required: true
+    }
+}, {
+        collection: [TABLES_PREFIX, 'learnedknols'].join('_')
+    });
+
+LearnedKnolSchema.set('toObject', {
+    getters: true
+});

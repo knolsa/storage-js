@@ -1,6 +1,6 @@
 
 import { UserSettingsSchema } from './schemas'
-import { Schema, model as createModel, Connection } from 'mongoose'
+import { Schema, Connection } from 'mongoose'
 import { MongoModel } from '../mongo_model'
 
 export type UserSettings = {
